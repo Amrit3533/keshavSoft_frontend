@@ -375,7 +375,7 @@ body {
 
 /* Footer Links */
 footer a:hover {
-    color: #ff0707 !important;
+    color: #ffc107 !important;
     transition: color 0.3s ease;
 }
 
@@ -526,5 +526,69 @@ html {
         animation-duration: 0.01ms !important;
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
+    }
+}
+
+/* Extra small screens (phones <576px) */
+@media (max-width: 576px) {
+    /* Make headings smaller */
+    .display-3 {
+        font-size: 2rem;
+    }
+
+    .display-4 {
+        font-size: 1.75rem;
+    }
+
+    .display-5 {
+        font-size: 1.5rem;
+    }
+
+    .display-6 {
+        font-size: 1.25rem;
+    }
+
+    /* Center hero text & space out image */
+    .hero-section {
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+
+    .hero-image-container {
+        margin-top: 1.5rem;
+    }
+
+    /* Stack flex buttons vertically */
+    .d-flex.flex-sm-row {
+        flex-direction: column !important;
+        gap: 1rem;
+    }
+
+    /* Make counters smaller */
+    .counter {
+        font-size: 1.25rem;
+    }
+
+    /* Adjust carousel content alignment */
+    .carousel .row {
+        text-align: center;
+    }
+
+    /* Reduce padding on tech cards */
+    .tech-card {
+        padding: 1rem !important;
+    }
+
+    /* Timeline alignment fixes */
+    .timeline {
+        padding-left: 15px;
+    }
+
+    .timeline::before {
+        left: 7px;
+    }
+
+    .timeline-marker {
+        left: -28px;
     }
 }
