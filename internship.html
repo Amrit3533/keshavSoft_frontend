@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Programs - KeshavSoft</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3 animated-brand" href="index.html">
+                <i class="fas fa-graduation-cap text-warning me-2 bounce-icon"></i>
+                <span class="gradient-text">KeshavSoft</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="internship.html">Internship</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Account
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Sign In</a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="dashboard.html">My Dashboard</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-warning ms-2 px-4" data-bs-toggle="modal" data-bs-target="#contactModal">
+                            Apply Now
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <section class="bg-light py-3" style="margin-top: 76px;">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Internship Programs</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Page Header -->
+    <section class="bg-gradient-primary text-white py-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h1 class="display-4 fw-bold mb-3">Internship Programs</h1>
+                    <p class="lead">Structured learning paths for B.Tech students</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sidebar Layout -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Sidebar -->
+                <div class="col-lg-3 mb-4">
+                    <div class="card border-0 shadow-sm sticky-top" style="top: 100px;">
+                        <div class="card-header bg-primary text-white">
+                            <h6 class="mb-0"><i class="fas fa-filter me-2"></i>Filter Programs</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="mb-4">
+                                <h6 class="fw-bold">Duration</h6>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="duration1" name="duration1">
+                                    <label class="form-check-label" for="duration1">1-2 Months</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="duration2" name="duration2">
+                                    <label class="form-check-label" for="duration2">3-4 Months</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="duration3" name="duration3">
+                                    <label class="form-check-label" for="duration3">6+ Months</label>
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <h6 class="fw-bold">Level</h6>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="beginner" name="beginner">
+                                    <label class="form-check-label" for="beginner">Beginner</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="intermediate" name="intermediate">
+                                    <label class="form-check-label" for="intermediate">Intermediate</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="advanced" name="advanced">
+                                    <label class="form-check-label" for="advanced">Advanced</label>
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <h6 class="fw-bold">Technology</h6>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="html" name="html">
+                                    <label class="form-check-label" for="html">HTML/CSS</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="bootstrap" name="bootstrap">
+                                    <label class="form-check-label" for="bootstrap">Bootstrap</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="javascript" name="javascript">
+                                    <label class="form-check-label" for="javascript">JavaScript</label>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary w-100">Apply Filters</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Content -->
+                <div class="col-lg-9">
+                    <!-- Task Breakdown Section -->
+                    <div class="row g-4 mb-5">
+                        <div class="col-12">
+                            <h2 class="fw-bold mb-4">Available Programs</h2>
+                        </div>
+                        
+                        <!-- Frontend Development Internship -->
+                        <div class="col-lg-6">
+                            <div class="card border-0 shadow-sm h-100 hover-lift">
+                                <div class="card-header bg-primary text-white">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="mb-0">Frontend Development</h5>
+                                        <span class="badge bg-warning">Popular</span>
+                                    </div>
+                                </div>
+                                <div class="card-body p-4">
+                                    <div class="mb-3">
+                                        <span class="badge bg-success me-2">3 Months</span>
+                                        <span class="badge bg-info me-2">Beginner</span>
+                                        <span class="badge bg-secondary">Certificate</span>
+                                    </div>
+                                    <p class="card-text text-muted mb-4">Complete frontend development program covering HTML5, CSS3, Bootstrap 5, and JavaScript basics with hands-on projects.</p>
+                                    
+                                    <h6 class="fw-bold mb-3">What You'll Learn:</h6>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Semantic HTML5 structure</li>
+                                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Modern CSS3 features</li>
+                                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Bootstrap 5 framework</li>
+                                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Responsive design principles</li>
+                                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>JavaScript fundamentals</li>
+                                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Git version control</li>
+                                    </ul>
+                                    
+                                    <div class="d-flex justify-content-between align-items-center mt-4">
+                                        <div>
+                                            <small class="text-muted">Starting from</small>
+                                            <h5 class="text-primary mb-0">₹2,999</h5>
+                                        </div>
+                                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">
+                                            Apply Now
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bootstrap 5 Mastery -->
+                        <div class="col-lg-6">
+                            <div class="card border-0 shadow-sm h-100 hover-lift">
+                                <div class="card-header bg-purple text-white">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="mb-0">Bootstrap 5 Mastery</h5>
+                                        <span class="badge bg-light text-dark">New</span>
+                                    </div>
+                                </div>
+                                <div class="card-body p-4">
+                                    <div class="mb-3">
+                                        <span class="badge bg-warning me-2">2 Months</span>
+                                        <span class="badge bg-primary me-2">Intermediate</span>
+                                        <span class="badge bg-secondary">Certificate</span>
+                                    </div>
+                                    <p class="card-text text-muted mb-4">Deep dive into Bootstrap 5 framework with advanced components, customization, and real-world project implementation.</p>
+                                    
+                                    <h6 class="fw-bold mb-3">What You'll Learn:</h6>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Bootstrap 5 grid system</li>
+                                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>All Bootstrap components</li>
+                                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Utility classes mastery</li>
+                                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Custom theme creation</li>
+                                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Advanced layouts</li>
+                                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Performance optimization</li>
+                                    </ul>
+                                    
+                                    <div class="d-flex justify-content-between align-items-center mt-4">
+                                        <div>
+                                            <small class="text-muted">Starting from</small>
+                                            <h5 class="text-primary mb-0">₹1,999</h5>
+                                        </div>
+                                        <button class="btn btn-purple" data-bs-toggle="modal" data-bs-target="#contactModal">
+                                            Apply Now
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Responsive Design Workshop -->
+                        <div class="col-lg-6">
+                            <div class="card border-0 shadow-sm h-100 hover-lift">
+                                <div class="card-header bg-success text-white">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="mb-0">Responsive Design</h5>
+                                        <span class="badge bg-light text-dark">Workshop</span>
+                                    </div>
+                                </div>
+                                <div class="card-body p-4">
+                                    <div class="mb-3">
+                                        <span class="badge bg-info me-2">1 Month</span>
+                                        <span class="badge bg-success me-2">Beginner</span>
+                                        <span class="badge bg-secondary">Certificate</span>
+                                    </div>
+                                    <p class="card-text text-muted mb-4">Master responsive web design principles and create websites that work perfectly on all devices and screen sizes.</p>
+                                    
+                                    <h6 class="fw-bold mb-3">What You'll Learn:</h6>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Mobile-first approach</li>
+                                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>CSS media queries</li>
+                                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Flexible layouts</li>
+                                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Image optimization</li>
+                                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Touch-friendly interfaces</li>
+                                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Cross-browser testing</li>
+                                    </ul>
+                                    
+                                    <div class="d-flex justify-content-between align-items-center mt-4">
+                                        <div>
+                                            <small class="text-muted">Starting from</small>
+                                            <h5 class="text-primary mb-0">₹999</h5>
+                                        </div>
+                                        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#contactModal">
+                                            Apply Now
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Deployment & Hosting -->
+                        <div class="col-lg-6">
+                            <div class="card border-0 shadow-sm h-100 hover-lift">
+                                <div class="card-header bg-dark text-white">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="mb-0">Deployment & Hosting</h5>
+                                        <span class="badge bg-warning">Essential</span>
+                                    </div>
+                                </div>
+                                <div class="card-body p-4">
+                                    <div class="mb-3">
+                                        <span class="badge bg-secondary me-2">1 Month</span>
+                                        <span class="badge bg-warning me-2">Intermediate</span>
+                                        <span class="badge bg-secondary">Certificate</span>
+                                    </div>
+                                    <p class="card-text text-muted mb-4">Learn to deploy your projects to live servers using GitHub Pages, Netlify, and other modern hosting platforms.</p>
+                                    
+                                    <h6 class="fw-bold mb-3">What You'll Learn:</h6>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Git version control</li>
+                                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>GitHub Pages deployment</li>
+                                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Netlify hosting</li>
+                                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Domain configuration</li>
+                                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>SSL certificates</li>
+                                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Performance monitoring</li>
+                                    </ul>
+                                    
+                                    <div class="d-flex justify-content-between align-items-center mt-4">
+                                        <div>
+                                            <small class="text-muted">Starting from</small>
+                                            <h5 class="text-primary mb-0">₹1,499</h5>
+                                        </div>
+                                        <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#contactModal">
+                                            Apply Now
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Submission Guidelines -->
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-header bg-info text-white">
+                            <h5 class="mb-0"><i class="fas fa-clipboard-list me-2"></i>Submission Guidelines</h5>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <h6 class="fw-bold text-primary">Project Requirements</h6>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2"><i class="fas fa-code text-info me-2"></i>Clean, well-structured HTML</li>
+                                        <li class="mb-2"><i class="fas fa-paint-brush text-info me-2"></i>Responsive CSS design</li>
+                                        <li class="mb-2"><i class="fas fa-mobile-alt text-info me-2"></i>Mobile-first approach</li>
+                                        <li class="mb-2"><i class="fas fa-check-circle text-info me-2"></i>Cross-browser compatibility</li>
+                                        <li class="mb-2"><i class="fas fa-rocket text-info me-2"></i>Live deployment link</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6 class="fw-bold text-success">Submission Process</h6>
+                                    <ol class="list-unstyled">
+                                        <li class="mb-2"><span class="badge bg-success me-2">1</span>Complete assigned tasks</li>
+                                        <li class="mb-2"><span class="badge bg-success me-2">2</span>Push code to GitHub</li>
+                                        <li class="mb-2"><span class="badge bg-success me-2">3</span>Deploy to GitHub Pages</li>
+                                        <li class="mb-2"><span class="badge bg-success me-2">4</span>Submit project links</li>
+                                        <li class="mb-2"><span class="badge bg-success me-2">5</span>Receive feedback & certificate</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            
+                            <div class="alert alert-warning mt-4" role="alert">
+                                <i class="fas fa-exclamation-triangle me-2"></i>
+                                <strong>Important:</strong> All projects must be deployed live and accessible via public URLs. GitHub repository links alone are not sufficient for submission.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title">
+                        <i class="fas fa-user-graduate me-2"></i>Apply for Internship
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form id="internshipForm">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="firstName" class="form-label">First Name *</label>
+                                <input type="text" class="form-control" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="lastName" class="form-label">Last Name *</label>
+                                <input type="text" class="form-control" id="lastName" name="lastName" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email *</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="phone" class="form-label">Phone *</label>
+                                <input type="tel" class="form-control" id="phone" name="phone" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="college" class="form-label">College/University *</label>
+                                <input type="text" class="form-control" id="college" name="college" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="year" class="form-label">Current Year *</label>
+                                <select class="form-select" id="year" name="year" required>
+                                    <option value="">Select Year</option>
+                                    <option value="1st">1st Year</option>
+                                    <option value="2nd">2nd Year</option>
+                                    <option value="3rd">3rd Year</option>
+                                    <option value="4th">4th Year</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="program" class="form-label">Select Program *</label>
+                                <select class="form-select" id="program" name="program" required>
+                                    <option value="">Choose Program</option>
+                                    <option value="frontend">Frontend Development Internship (3 Months)</option>
+                                    <option value="bootstrap">Bootstrap 5 Mastery (2 Months)</option>
+                                    <option value="responsive">Responsive Design Workshop (1 Month)</option>
+                                    <option value="deployment">Deployment & Hosting (1 Month)</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="experience" class="form-label">Previous Experience</label>
+                                <textarea class="form-control" id="experience" name="experience" rows="3" placeholder="Tell us about your coding experience, projects, or relevant skills"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <label for="motivation" class="form-label">Why do you want to join this program? *</label>
+                                <textarea class="form-control" id="motivation" name="motivation" rows="3" required placeholder="Share your motivation and career goals"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="agreeTerms" name="agreeTerms" required>
+                                    <label class="form-check-label" for="agreeTerms">
+                                        I agree to the program terms and conditions *
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" form="internshipForm" class="btn btn-primary">
+                        <i class="fas fa-paper-plane me-2"></i>Submit Application
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sign In to KeshavSoft</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="loginEmail" name="loginEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="loginPassword" name="loginPassword" required>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberMe" name="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Remember me</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Sign In</button>
+                    </form>
+                    <div class="text-center mt-3">
+                        <small>Don't have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#signupModal" data-bs-dismiss="modal">Sign up</a></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Create Account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="signupFirstName" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="signupFirstName" name="signupFirstName" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="signupLastName" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="signupLastName" name="signupLastName" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="signupEmail" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="signupEmail" name="signupEmail" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="signupPassword" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="signupPassword" name="signupPassword" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="confirmPassword" class="form-label">Confirm Password</label>
+                                <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="agreeTermsSignup" name="agreeTermsSignup" required>
+                                    <label class="form-check-label" for="agreeTermsSignup">
+                                        I agree to the <a href="#">Terms of Service</a>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 mt-3">Create Account</button>
+                    </form>
+                    <div class="text-center mt-3">
+                        <small>Already have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-dismiss="modal">Sign in</a></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-colour text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold mb-3">
+                        <i class="fas fa-graduation-cap text-warning me-2"></i>KeshavSoft
+                    </h5>
+                    <p class="text-muted">Empowering B.Tech students with hands-on frontend development skills through structured internships and real-world projects.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-light"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-instagram fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Programs</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="internship.html" class="text-muted text-decoration-none">Internships</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Workshops</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Bootcamps</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Mentorship</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Resources</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-muted text-decoration-none">Documentation</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Tutorials</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Code Examples</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Best Practices</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Support</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-muted text-decoration-none">Help Center</a></li>
+                        <li><a href="contact.html" class="text-muted text-decoration-none">Contact Us</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Community</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Contact</h6>
+                    <ul class="list-unstyled text-muted">
+                        <li><i class="fas fa-envelope me-2"></i>hello@keshavsoft.com</li>
+                        <li><i class="fas fa-phone me-2"></i>+91 98765 43210</li>
+                        <li><i class="fab fa-whatsapp me-2"></i>WhatsApp Support</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <small class="text-muted">&copy; 2025 KeshavSoft. All rights reserved.</small>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <small class="text-muted">
+                        <a href="#" class="text-muted text-decoration-none me-3">Privacy Policy</a>
+                        <a href="#" class="text-muted text-decoration-none">Terms of Service</a>
+                    </small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+</html>
